@@ -1,21 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>시험코딩용 웹 페이지</title>
-<meta charset="utf-8">
-</head>
-<body>
-  <h1><a href="index.html">벧엘컴퓨터</a></h1>
-<ol>
-  <li><a href="1.html">회사소개</a></li>
-  <li><a href="2.html">제품소개</a></li>
-  <li><a href="3.html">제품구매</a></li>
-  <li><a href="4.html">고객지원</a></li>
-  <li><a href="5.html">제품지원</a></li>
-</ol>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="color.js"></script>
+    <title>web - css</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="다크모드ON" onclick="
+      darkModeSwitch(this)
+      ">
 
-<h2>제품구매</h2>
-<img src="coding.jpg"width="70%">
-<p>제품구매 이미지 출력
-</body>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html" style="color:blue;font-weight:600">JavaScript</a></li>
+      </ol>
+    <div id="article">
+      <h2>JavaScript</h2>
+      <p>
+      JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[9] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+      Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[10] Over 97% of websites use it client-side for web page behavior,[11] often incorporating third-party libraries.[12] All major web browsers have a dedicated JavaScript engine to execute the code on the user's device.
+      As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
+      The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.
+      JavaScript engines were originally used only in web browsers, but they are now core components of other software systems, most notably servers and a variety of applications.
+      Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.
+      </p>
+    </div>
+  </div>
+  </body>
 </html>

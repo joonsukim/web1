@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>objet</h1>
+    <script>
+      var family = {
+        "daddy" : "jm" ,
+        "mommy" : "yc"
+      };
+      document.write("daddy : "+family.daddy+"<br />");
+      document.write("mommy : "+family.mommy+"<br />");
+      family.son = "js";
+      document.write("son : "+family.son+"<br />");
+      family["daughter"] = "yr";
+      document.write("daughter : "+family["daughter"]+"<br />")
+    </script>
+    <h2>Iterate</h2>
+    <script>
+      for(var key in family) {
+        document.write(key+' : '+family[key]+'<br />');
+      }
+    </script>
+    <h2>property & Method</h2>
+    <script>
+      family.showall = function(){
+        for(var key in this) {
+          document.write(key+' : '+this[key]+'<br />');
+        }
+      }
+      family.showall();
+    </script>
+  </body>
+</html>
